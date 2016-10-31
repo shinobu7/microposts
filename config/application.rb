@@ -4,6 +4,10 @@ require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
+# config.i18n.default_locale = :de
+
+# The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
+
 Bundler.require(*Rails.groups)
 
 module Microposts
