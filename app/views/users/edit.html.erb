@@ -4,6 +4,5 @@
 <% @users.each do |user| %>
   <span class="label label-info"><%= user.name %></span>
     <%= user.body %>
-    (<%= link_to "edit" , edit_user_path(current_user) %>)
-  <br>
+    (<%= link_to "edit" , edit_user_path(user) %>)
 

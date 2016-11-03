@@ -27,7 +27,7 @@ def update
       redirect_to root_path , notice: 'メッセージを編集しました'
     else
       # 保存に失敗した場合は編集画面へ戻す
-      render 'edit'
+      render 'user'
     end
   end
 

@@ -4,8 +4,8 @@
 <%= alert %>
 
       <ul>
-<% @message.errors.full_messages.each do |full_message| %>
-<li><%= full_message %></li>
+<% @user.errors.full_users.each do |full_user| %>
+<li><%= full_user %></li>
 <% end %>
       </ul>
     </div>
@@ -18,5 +18,4 @@
 <%= f.label :password %>
     <%= f.password_field :password, class: 'form-control' %>
     <%= f.submit "edit my account", class: "btn btn-primary" %>
-<%= render 'form' %>
 <% end %>
