@@ -9,8 +9,13 @@
 <body>
   <%= render 'layouts/header' %>
   <div class="container">
-    <% flash.each do |message_type, message| %> <!-- ここから -->
-      <div class="alert alert-<%= message_type %>"><%= message %></div>
+     <% if notice %>
+      <div class="alert alert-info">
+        <%= notice %>
+      </div>
+    <% end %>
+    <% flash.each do |user_type, user| %> <!-- ここから -->
+      <div class="alert alert-<%= user_type %>"><%= user %></div>
     <% end %> <!-- ここまで追加 -->
     <%= yield %>
   </div>
