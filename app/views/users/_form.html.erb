@@ -1,5 +1,5 @@
-<%= form_for(@user) do |f| %>
-<% if @user.errors.present? %>
+<%= form_for(@current_user) do |f| %>
+<% if @current_user.errors.present? %>
     <div class="alert alert-danger">
 <%= alert %>
 
