@@ -2,3 +2,7 @@
   <%= gravatar_for @user %>
   <%= @user.name %>
 </h1>
+<ul>
+  <li><h3>活動場所：<%= @user.location.present? ? @user.location : "まだ、設定されていません" %></h3></li>
+  <li><h3>故郷：<%= @user.place.present? ? @user.place : "まだ、設定されていません" %></h3></li>
+</ul>
